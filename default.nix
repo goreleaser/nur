@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   goreleaser = pkgs.callPackage ./pkgs/goreleaser { };
+  goreleaser-pro = pkgs.callPackage ./pkgs/goreleaser-pro { };
 }

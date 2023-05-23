@@ -2,6 +2,7 @@
 { system ? builtins.currentSystem, pkgs, lib, fetchurl, installShellFiles }:
 let
   shaMap = {
+    i686-linux = "0vn38anhgx081dnnjf77y5514an0hxqxrz2in4wxj3ri8s0k9592";
     x86_64-linux = "047spkywhfgcibry6p16y12ynr5mxsl9r88jhqy8zxs7wdihq7l1";
     aarch64-linux = "0h5jndgv3ifvlvy2r4xjgvqyday2k9jb4h24f7n0rdqidrxgn8pg";
     x86_64-darwin = "1f80civ7i0dhnkaqpdmbynwn436fqsl6hyw34cp1airk6gnqwcwm";
@@ -9,6 +10,8 @@ let
   };
 
   urlMap = {
+    i686-linux =
+      "https://github.com/goreleaser/goreleaser/releases/download/v1.18.2/goreleaser_Linux_i386.tar.gz";
     x86_64-linux =
       "https://github.com/goreleaser/goreleaser/releases/download/v1.18.2/goreleaser_Linux_x86_64.tar.gz";
     aarch64-linux =
