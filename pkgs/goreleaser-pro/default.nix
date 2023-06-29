@@ -43,7 +43,7 @@ in pkgs.stdenv.mkDerivation {
   meta = with lib; {
     description = "Deliver Go binaries as fast and easily as possible";
     homepage = "https://goreleaser.com";
-    license = licenses.unfree;
+    # license = licenses.unfree;
 
     platforms = [
       "aarch64-darwin"
